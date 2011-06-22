@@ -1,0 +1,156 @@
+html, body
+{
+  margin:0; 
+  padding:0; 
+  text-align:left; 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #55ff00;
+  color: #ffffff;
+} 
+ 
+#pagewidth{ 
+ width:80%; 
+ text-align:left; 
+ margin:0 auto; 
+} 
+ 
+#header{
+ position:relative; 
+ height: 150px; 
+ background-color:#ff0000; 
+ width:100%;
+ display:block;
+ overflow:auto;
+ background-repeat: no-repeat;
+} 
+ 
+#maincol{
+ background-color: #FFFFFF;  
+ position: relative; 
+ padding-bottom: 1em;
+ }
+ 
+ #contentdata
+ {
+ 	padding: 50;
+ }
+ 
+#footer{
+ height:20px; 
+ clear:both;
+ display:block;
+ overflow:auto;
+ text-align: right;
+ font-size: 12px;
+ padding: 5px;
+}
+
+ul
+{
+list-style-type: none;
+}
+
+li.template-link
+{
+	margin-bottom: 5px;
+}
+ 
+.logo{
+	display: block;
+	position:relative;
+	/*left:2%;*/
+	padding-top:1%;
+	padding-bottom:1%;
+	margin-left:auto;
+	margin-right:auto;
+	}
+/*)
+.banner{
+	position:absolute;
+    width: inherit;
+    top: 0;
+    left: 0;
+
+	}
+ */
+ 
+/* ******************************************************************** */ 
+/* Clearfix: http://csscreator.com/attributes/containedfloat.php        */
+/* ******************************************************************** */
+.clearfix:after {
+ content: "."; 
+ display: block; 
+height: 0; 
+ clear: both; 
+ visibility: hidden;
+ }
+ 
+.clearfix{display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}
+/* End hide from IE-mac */  
+
+a, a:active, a:focus
+{
+	text-decoration: none;
+	color: #000;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+
+.zend_form
+{
+}
+
+.zend_form dt label
+{
+	text-transform: capitalize;
+	font-size: 14px;
+	color: #666;
+}
+
+.zend_form dd
+{
+	margin: 5px 0 10px 15px;
+}
+
+.zend_form dd ul.errors
+{
+	padding: 0;
+	color: #f00;
+	font-size: 12px;
+}
+
+input[type="text"], input[type="submit"]
+{
+	border: 1px solid #cecece;
+	
+}
+
+input[type="text"]
+{
+	font-size: 14px;
+	padding: 2px;
+}
+
+input[type="submit"]
+{
+	padding: 5px;
+}
+
+h1
+{
+	color: #444;
+}
+
+#back
+{
+	background-image: url(../Images/arrow-back.png);
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	line-height: 20px;
+}
