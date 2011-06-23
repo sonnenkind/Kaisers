@@ -91,8 +91,9 @@ html, body
 	clear: both;
 	display: block;
 	text-align: left;
-	font-size: 12px;
-	padding-left: ;
+	font-size: 14px;
+	padding-top: 3px;
+	padding-left: 3%;
 	background-color: #00ff00;
 }
 
