@@ -1,27 +1,41 @@
 <html>
-  <head>
-    <title>
-      Kaisers Restaurant
-    </title>
-
-    <?php echo $this->headLink()->appendStylesheet('/CSS/kaisers.css') ?>
-  </head>
-
-  <body>
-
-
-<body>
-  <div id="header"></div>
+	<head>
+	    <?php echo $this->headLink()->appendStylesheet('/CSS/kaisers.css') ?>
 	
-  <div id="contentdata">
-	<?php echo $this->layout()->content ?>
-	</div>
+		<title>
+			Kaisers Restaurant
+		</title>
+	</head>
 
-	<div id="footer">
-		&copy; 2011 by Team 7
-	</div>
-</body>
+	<body>
+
+
+	<body>
+		<div class="header">
+			<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index'));?>">
+				Kaisers Restaurant
+			</a>
+		</div>
+	
+		<div class="linkrow">
+ 			<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index'));?>">
+ 				World
+ 			</a>
+ 			
+ 			||
+ 		
+			<a href="<?php echo $this->url(array('controller'=>'index','action'=>'asdf'));?>">
+				Mayte
+			</a>
+		</div>
+  
+		<div class="mainframe">
+			<?php echo $this->layout()->content ?>
+		</div>
+		
+		<div class="footer">
+			Kaisers Restaurant - 9800 Spittal
+		</div>
+	</body>
 </html>
 
-  </body>
-</html>

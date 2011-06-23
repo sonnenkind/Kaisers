@@ -1,156 +1,112 @@
 html, body
 {
-  margin:0; 
-  padding:0; 
-  text-align:left; 
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #55ff00;
-  color: #ffffff;
+	margin:0; 
+	padding:0;
+	height: 100%;
+	text-align:left; 
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #88ff00;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 20;
 } 
+
+
+.header
+{
+
  
-#pagewidth{ 
- width:80%; 
- text-align:left; 
- margin:0 auto; 
+ 
+	position:fixed;
+	width: 100%;
+	height: 80px;
+	background-color:#00ff00; 
+	display:block;
+	overflow:auto;
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	color: #ffffff;
+	font-weight: bold;
+	font-sytle: italic;
+	font-size: 40px;
+	text-align: center;
 } 
+
+
+
+.linkrow
+{
+	background-color: #FFFFFF;  
+	position: fixed;
+	height: 20px;
+	width: 100%;
+	top: 80px;
+	padding-left: 4%;
+	color: #00ff00;
+	font-weight: bold;
+	font-size: 16px;
+	
+}
  
-#header{
- position:relative; 
- height: 150px; 
- background-color:#ff0000; 
- width:100%;
- display:block;
- overflow:auto;
- background-repeat: no-repeat;
-} 
- 
-#maincol{
- background-color: #FFFFFF;  
- position: relative; 
- padding-bottom: 1em;
- }
- 
- #contentdata
- {
- 	padding: 50;
- }
- 
-#footer{
- height:20px; 
- clear:both;
- display:block;
- overflow:auto;
- text-align: right;
- font-size: 12px;
- padding: 5px;
+.linkrow A:link
+{
+	color: #00FF00;
+	text-decoration: none;
 }
 
-ul
+.linkrow A:visited
 {
-list-style-type: none;
+	color: #00FF00;
+	text-decoration: none;
 }
 
-li.template-link
+.linkrow A:hover
 {
-	margin-bottom: 5px;
+	color: #88FF00;
+	text-decoration: none;
 }
  
-.logo{
+
+ 
+.mainframe
+{
+	overflow:auto;
+	position: fixed;
+	top: 100px;
+	bottom: 20px;
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 4%
+}
+ 
+ 
+ 
+.footer
+{
+	position: fixed;
+	bottom: 0%;
+	width: 100%;
+	height: 20px; 
+	overflow: auto;
+	clear: both;
 	display: block;
-	position:relative;
-	/*left:2%;*/
-	padding-top:1%;
-	padding-bottom:1%;
-	margin-left:auto;
-	margin-right:auto;
-	}
-/*)
-.banner{
-	position:absolute;
-    width: inherit;
-    top: 0;
-    left: 0;
+	text-align: left;
+	font-size: 12px;
+	padding-left: ;
+	background-color: #00ff00;
+}
 
-	}
- */
- 
-/* ******************************************************************** */ 
-/* Clearfix: http://csscreator.com/attributes/containedfloat.php        */
-/* ******************************************************************** */
-.clearfix:after {
- content: "."; 
- display: block; 
-height: 0; 
- clear: both; 
- visibility: hidden;
- }
- 
-.clearfix{display: inline-block;}
 
-/* Hides from IE-mac \*/
-* html .clearfix{height: 1%;}
-.clearfix{display: block;}
-/* End hide from IE-mac */  
+
 
 a, a:active, a:focus
 {
 	text-decoration: none;
-	color: #000;
+	color: #FFFFFF;
 }
+
 a:hover
 {
+	color: #FFFFFF;
 	text-decoration: underline;
-}
-
-.zend_form
-{
-}
-
-.zend_form dt label
-{
-	text-transform: capitalize;
-	font-size: 14px;
-	color: #666;
-}
-
-.zend_form dd
-{
-	margin: 5px 0 10px 15px;
-}
-
-.zend_form dd ul.errors
-{
-	padding: 0;
-	color: #f00;
-	font-size: 12px;
-}
-
-input[type="text"], input[type="submit"]
-{
-	border: 1px solid #cecece;
-	
-}
-
-input[type="text"]
-{
-	font-size: 14px;
-	padding: 2px;
-}
-
-input[type="submit"]
-{
-	padding: 5px;
-}
-
-h1
-{
-	color: #444;
-}
-
-#back
-{
-	background-image: url(../Images/arrow-back.png);
-	background-repeat: no-repeat;
-	padding-left: 25px;
-	line-height: 20px;
 }
