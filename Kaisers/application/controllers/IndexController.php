@@ -10,13 +10,14 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+
     }
 
-    public function asdfAction()
+    
+    public function kontaktAction()
     {
-
-    } 
+        $_title = $_title . ' - Kontakt';
+    }
 
 
 }

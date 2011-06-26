@@ -5,27 +5,27 @@ html, body
 	height: 100%;
 	text-align:left; 
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: #88ff00;
 	color: #ffffff;
 	font-weight: bold;
 	font-size: 20;
 } 
 
-
+/*
+///////////////////////////////////////////////////////////////////////////////
+// Header                                                                    //
+///////////////////////////////////////////////////////////////////////////////
+*/
 .header
 {
-
- 
- 
 	position:fixed;
 	width: 100%;
-	height: 80px;
+	height: 90px;
 	background-color:#00ff00; 
 	display:block;
 	overflow:auto;
 	background-repeat: no-repeat;
-	padding-top: 20px;
 	color: #ffffff;
+	padding-top: 25px;
 	font-weight: bold;
 	font-sytle: italic;
 	font-size: 40px;
@@ -33,72 +33,108 @@ html, body
 } 
 
 
-
+/*
+///////////////////////////////////////////////////////////////////////////////
+// Linkreihe                                                                 //
+///////////////////////////////////////////////////////////////////////////////
+*/
 .linkrow
 {
 	background-color: #FFFFFF;  
 	position: fixed;
-	height: 20px;
+	height: 30px;
 	width: 100%;
-	top: 80px;
+	top: 75px;
 	padding-left: 4%;
 	color: #00ff00;
 	font-weight: bold;
-	font-size: 16px;
-	
+	font-size: 18px;
 }
  
 .linkrow A:link
 {
+	font-size: 18px;
+	font-weight: bold;
 	color: #00FF00;
 	text-decoration: none;
 }
 
 .linkrow A:visited
 {
+	font-size: 18px;
+	font-weight: bold;
 	color: #00FF00;
 	text-decoration: none;
 }
 
 .linkrow A:hover
 {
-	color: #88FF00;
+	font-size: 18px;
+	font-weight: bold;
+	color: #88FF44;
 	text-decoration: none;
 }
  
-
  
+/*
+///////////////////////////////////////////////////////////////////////////////
+// Hauptframe                                                                //
+///////////////////////////////////////////////////////////////////////////////
+*/
 .mainframe
 {
 	overflow:auto;
 	position: fixed;
-	top: 100px;
-	bottom: 20px;
+	top: 115px;
+	bottom: 30px;
 	width: 100%;
 	padding-top: 20px;
-	padding-left: 4%
+	padding-left: 5%;
+	padding-bottom: 20px;
+	background-color: #88ff44;
+	
+}
+
+.mainframe A:link
+{
+	font-size= 20;
 }
  
- 
- 
+/* 
+///////////////////////////////////////////////////////////////////////////////
+// Footer                                                                    //
+///////////////////////////////////////////////////////////////////////////////
+*/ 
 .footer
 {
 	position: fixed;
 	bottom: 0%;
 	width: 100%;
-	height: 20px; 
+	height: 30px; 
 	overflow: auto;
 	clear: both;
 	display: block;
-	text-align: left;
-	font-size: 14px;
-	padding-top: 3px;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 0px;
 	padding-left: 3%;
 	background-color: #00ff00;
+	font-weight = bold;
+}
+
+.footertable
+{
+	font-weight: bold;
+	font-size: 18px;
+	color: #FFFFFF;
 }
 
 
-
+/*
+///////////////////////////////////////////////////////////////////////////////
+// Links                                                                     //
+///////////////////////////////////////////////////////////////////////////////
+*/
 
 a, a:active, a:focus
 {
@@ -111,3 +147,6 @@ a:hover
 	color: #FFFFFF;
 	text-decoration: underline;
 }
+
+
+	

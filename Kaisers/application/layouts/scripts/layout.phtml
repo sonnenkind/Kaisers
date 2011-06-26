@@ -1,11 +1,14 @@
 <html>
 	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+	
 	    <?php echo $this->headLink()->appendStylesheet('/CSS/kaisers.css') ?>
 		
 		<link rel='shortcut icon'href='/test.ico'>
 		
+		
 		<title>
-			Kaisers Restaurant
+			<?php echo $_title;?>
 		</title>
 	</head>
 
@@ -13,30 +16,53 @@
 
 
 	<body>
-		<div class="header">
-			<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index'));?>">
+		<div class="header" id='header'>
+			<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index'));?>" name='logo'>
 				Kaisers Restaurant
 			</a>
 		</div>
 	
-		<div class="linkrow">
- 			<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index'));?>">
- 				World
- 			</a>
- 			
- 			||
- 		
-			<a href="<?php echo $this->url(array('controller'=>'index','action'=>'asdf'));?>">
-				Mayte
-			</a>
+		<div class="linkrow" id='linkrow'>
+			<table width='420px' class='linkrowtable'>
+				<td width='120px'>
+ 					<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index'));?>" name='aktuelles'>
+ 						Aktuelles
+ 					</a>
+ 				</td>
+ 				
+ 				<td width='150px'>
+ 					<a href="<?php echo $this->url(array('controller'=>'reservation','action'=>'index'));?>" name='reservierung'>
+ 						Reservierung
+ 					</a>
+ 				</td>
+ 				
+ 				<td width='150px'>
+  					<a href="<?php echo $this->url(array('controller'=>'index','action'=>'kontakt'));?>" name='kontakt'>
+ 						Kontakt/Anfahrt
+ 					</a>
+ 				</td>
+ 					
+			</table>
 		</div>
   
-		<div class="mainframe">
+		<div class="mainframe" id='mainframe'>
 			<?php echo $this->layout()->content ?>
 		</div>
 		
-		<div class="footer">
-			Kaisers Restaurant - 9800 Spittal
+		<div class="footer" id='footer'>
+			<table width='100%' class='footertable'>
+				<td width='30%'>
+					Kaisers Restaurant / Bar / Catering
+				</td>
+				
+				<td width='55%'>
+					Hauptplatz 20 / Kirchgasse 5, 9800 Spittal an der Drau
+				</td>
+				
+				<td width='15%'>
+					04762/35399
+				</td>
+			</table>
 		</div>
 	</body>
 </html>
