@@ -1,61 +1,72 @@
 html, body
 {
-	margin:0; 
-	padding:0;
-	height: 100%;
-	text-align:left; 
-	font-family: Arial, Helvetica, sans-serif;
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 20;
-} 
+	background-color: #78c143;
+	font-family: Arial, Helvetica, sans-serif ;
+	color: #000000;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+}
 
-/*
-///////////////////////////////////////////////////////////////////////////////
-// Header                                                                    //
-///////////////////////////////////////////////////////////////////////////////
-*/
+a, a:active, a:focus
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+table
+{
+	font-size: 22px;
+}
+
+.logo
+{
+	position: fixed;
+	width: 15%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+
+
 .header
 {
-	position:fixed;
-	width: 100%;
-	height: 90px;
-	background-color:#00ff00; 
-	display:block;
-	overflow:auto;
-	background-repeat: no-repeat;
-	color: #ffffff;
-	padding-top: 25px;
-	font-weight: bold;
-	font-sytle: italic;
-	font-size: 40px;
-	text-align: center;
-} 
+	position: fixed;
+
+	width: 85%;
+	height: 115px;
+	left: 15%;
+	top: 0%;
+	display: block;
+}
 
 
-/*
-///////////////////////////////////////////////////////////////////////////////
-// Linkreihe                                                                 //
-///////////////////////////////////////////////////////////////////////////////
-*/
 .linkrow
 {
-	background-color: #FFFFFF;  
 	position: fixed;
-	height: 30px;
-	width: 100%;
+	background-color: #ffffff;
+	height: 28px;
+	width: 85%;
+	left: 15%;
 	top: 75px;
-	padding-left: 4%;
+	padding-left: 3%;
+	padding-top: 2px;
 	color: #00ff00;
 	font-weight: bold;
-	font-size: 18px;
 }
- 
+
 .linkrow A:link
 {
 	font-size: 18px;
 	font-weight: bold;
-	color: #00FF00;
+	color: #886644;
 	text-decoration: none;
 }
 
@@ -63,90 +74,75 @@ html, body
 {
 	font-size: 18px;
 	font-weight: bold;
-	color: #00FF00;
+	color: #886644;
 	text-decoration: none;
 }
 
-.linkrow A:hover
+
+.linkrow td
 {
-	font-size: 18px;
-	font-weight: bold;
-	color: #88FF44;
-	text-decoration: none;
+	text-align: center;
 }
- 
- 
-/*
-///////////////////////////////////////////////////////////////////////////////
-// Hauptframe                                                                //
-///////////////////////////////////////////////////////////////////////////////
-*/
+
+.linkrow TD:hover
+{
+	background-color: #AA6644;
+}
+
+.linkrow td:hover a
+{
+	color: #FFFFFF;
+}
+
+
 .mainframe
 {
 	overflow:auto;
 	position: fixed;
 	top: 115px;
 	bottom: 30px;
-	width: 100%;
 	padding-top: 20px;
 	padding-left: 5%;
+	padding-right: 5%;
 	padding-bottom: 20px;
-	background-color: #88ff44;
-	
+	background-color: #ffffff;	
+	left: 15%;
+	width: 85%;
 }
+
 
 .mainframe A:link
 {
 	font-size= 20;
+	color: #000000;
 }
- 
-/* 
-///////////////////////////////////////////////////////////////////////////////
-// Footer                                                                    //
-///////////////////////////////////////////////////////////////////////////////
-*/ 
+
+
 .footer
 {
 	position: fixed;
 	bottom: 0%;
-	width: 100%;
 	height: 30px; 
-	overflow: auto;
+	left: 15%;
 	clear: both;
 	display: block;
-	text-align: center;
-	font-size: 24px;
-	padding-top: 0px;
-	padding-left: 3%;
-	background-color: #00ff00;
-	font-weight = bold;
-}
-
-.footertable
-{
+	text-align: left;
+	font-size: 22px;
 	font-weight: bold;
-	font-size: 18px;
-	color: #FFFFFF;
+	width: 85%;
+	background-image: url(/Images/footer.jpg);
 }
 
-
-/*
-///////////////////////////////////////////////////////////////////////////////
-// Links                                                                     //
-///////////////////////////////////////////////////////////////////////////////
-*/
-
-a, a:active, a:focus
-{
-	text-decoration: none;
-	color: #FFFFFF;
-}
-
-a:hover
+.footer table
 {
 	color: #FFFFFF;
-	text-decoration: underline;
+}
+.menu
+{
+    width: 85%;
+    left: 15%;
+    text-align: center;
+    
 }
 
 
-	

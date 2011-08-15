@@ -1,69 +1,95 @@
 <html>
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=8">
-	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
 	    <?php echo $this->headLink()->appendStylesheet('/CSS/kaisers.css') ?>
 		
-		<link rel='shortcut icon'href='/test.ico'>
-		
+		<link rel='shortcut icon'href='/Images/favicon.ico'>
 		
 		<title>
-			<?php echo $_title;?>
+			<?php echo "Kaisers - ".$this->title;?>
 		</title>
 	</head>
 
 	<body>
-
-
-	<body>
-		<div class="header" id='header'>
-			<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index'));?>" name='logo'>
-				Kaisers Restaurant
+		<div class="logo">
+			<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index'));?>">
+				<img src='/Images/logo.jpg' height='100%' border='0' frame='0'></img>
 			</a>
 		</div>
+		
+		<div class="header">
+			<img src='/Images/wein.jpg' height:'115px'></img>
+
+			<div class="linkrow">
+				<table width='545px'>
+					<td width='100px' class="linkrowoff" onmouseover="className='linkrowon';" onmouseout="className='linkrowoff';">
+ 						<a href="<?php echo $this->url(array('controller'=>'menu','action'=>'showmenu'));?>">
+ 							Aktuelles
+ 						</a>
+ 					</td>
+ 				
+ 					<td width='155px' class="linkrowoff" onmouseover="className='linkrowon';" onmouseout="className='linkrowoff';">
+  						<a href="<?php echo $this->url(array('controller'=>'index','action'=>'kontakt'));?>">
+ 							Kontakt/Anfahrt
+ 						</a>
+ 					</td>
+
+ 					<td width='210px' class="linkrowoff" onmouseover="className='linkrowon';" onmouseout="className='linkrowoff';">
+  						<a href="<?php echo $this->url(array('controller'=>'menu','action'=>'index'));?>">
+ 							Speise- Getr&aumlnkekarte
+ 						</a>
+ 					</td>
+ 				
+ 					<td width='80px' class="linkrowoff" onmouseover="className='linkrowon';" onmouseout="className='linkrowoff';">
+ 						<a href="<?php echo $this->url(array('controller'=>'gallery', 'action'=>'index'));?>">
+ 							Galerie
+ 						</a>
+ 					</td>
+				</table>
+			</div>
+  		</div>
+
 	
-		<div class="linkrow" id='linkrow'>
-			<table width='420px' class='linkrowtable'>
-				<td width='120px'>
- 					<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index'));?>" name='aktuelles'>
- 						Aktuelles
- 					</a>
- 				</td>
- 				
- 				<td width='150px'>
- 					<a href="<?php echo $this->url(array('controller'=>'reservation','action'=>'index'));?>" name='reservierung'>
- 						Reservierung
- 					</a>
- 				</td>
- 				
- 				<td width='150px'>
-  					<a href="<?php echo $this->url(array('controller'=>'index','action'=>'kontakt'));?>" name='kontakt'>
- 						Kontakt/Anfahrt
- 					</a>
- 				</td>
- 					
-			</table>
-		</div>
-  
-		<div class="mainframe" id='mainframe'>
+		<div class="mainframe">		
 			<?php echo $this->layout()->content ?>
 		</div>
 		
-		<div class="footer" id='footer'>
-			<table width='100%' class='footertable'>
-				<td width='30%'>
-					Kaisers Restaurant / Bar / Catering
-				</td>
+
+		<div class="footer">
+			<table width="100%">
+				<tr>
+					<td width="65%" align="left">
+						Hauptplatz 20 / Kirchgasse 5, 9800 Spittal an der Drau
+					</td>
 				
-				<td width='55%'>
-					Hauptplatz 20 / Kirchgasse 5, 9800 Spittal an der Drau
-				</td>
-				
-				<td width='15%'>
-					04762/35399
-				</td>
+					<td width="35%" align="right">
+						04762/35399
+					</td>
+				</tr>
 			</table>
-		</div>
+		</div>	
 	</body>
 </html>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

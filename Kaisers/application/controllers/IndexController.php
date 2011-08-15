@@ -10,15 +10,15 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
+    	$this->view->title = 'Restaurant / Bar / Catering';
 
     }
 
     
     public function kontaktAction()
     {
-        $_title = $_title . ' - Kontakt';
+        $this->view->title = 'Kontakt';
     }
-
 
 }
 
