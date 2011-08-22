@@ -1,6 +1,6 @@
 html, body
 {
-	background-color: #78c143;
+	background-color: #8c5627;
 	font-family: Arial, Helvetica, sans-serif ;
 	color: #000000;
 	font-size: 20px;
@@ -28,10 +28,12 @@ table
 {
 	position: fixed;
 	width: 15%;
-	height: 100%;
+	top: 115px;
+	bottom: 0px;
 	padding: 0;
 	margin: 0;
 	text-align: center;
+	background-color: #79c143;
 }
 
 
@@ -40,9 +42,9 @@ table
 {
 	position: fixed;
 
-	width: 85%;
+	width: 100%;
 	height: 115px;
-	left: 15%;
+	left: 0%;
 	top: 0%;
 	display: block;
 }
@@ -58,7 +60,6 @@ table
 	top: 75px;
 	padding-left: 3%;
 	padding-top: 2px;
-	color: #00ff00;
 	font-weight: bold;
 }
 
@@ -66,7 +67,7 @@ table
 {
 	font-size: 18px;
 	font-weight: bold;
-	color: #886644;
+	color: #79c143;
 	text-decoration: none;
 }
 
@@ -74,7 +75,7 @@ table
 {
 	font-size: 18px;
 	font-weight: bold;
-	color: #886644;
+	color: #79c143;
 	text-decoration: none;
 }
 
@@ -86,7 +87,7 @@ table
 
 .linkrow TD:hover
 {
-	background-color: #AA6644;
+	background-color: #79c143;
 }
 
 .linkrow td:hover a
@@ -130,7 +131,8 @@ table
 	font-size: 22px;
 	font-weight: bold;
 	width: 85%;
-	background-image: url(/Images/footer.jpg);
+	background-color: #51a216;
+
 }
 
 .footer table
@@ -142,7 +144,20 @@ table
     width: 85%;
     left: 15%;
     text-align: center;
-    
+}
+
+@font-face
+{
+	font-family: "segoepr";
+	src: url(/Fonts/segoepr.ttf);
+}
+
+.wine
+{
+    width: 85%;
+    left: 15%;
+    text-align: center;
+	font-family: "segoepr";
 }
 
 

@@ -1,5 +1,61 @@
 <?php
+	mysql_connect("localhost","root", "f3ttuj1q") or die ("Keine Verbindung moeglich");
+	mysql_select_db("Kaisers") or die ("Die Datenbank existiert nicht.");
+
+	$heute = getdate(); 
+	$y= $heute[year];
+	$m= $heute[mon];
+	$d= $heute[mday];
+
+	$ts = mktime(0,0,0,$m,$d,$y);
+	$kw = date('W',$ts);
+
+	$output = mysql_query("Select * from Wochenplan where KW ='".$kw."';");
+	$menu = mysql_fetch_object($output);
+
+	function showMeals($meal1, $meal2)
+	{
+		if($meal1 == NULL)
+		{
+			if($meal2 == NULL)			
+				echo "Feiertag";
+			else
+				echo $meal2;
+		}
+		else
+		{
+			echo $meal1;
+			
+			if($meal2 != NULL)
+				echo "<br>oder<br>".$meal2;			
+		}
+
+	}
+
+
+
 	$datum = getdate();
 	
-	echo $datum[yday];
+	switch($datum['wday'])
+	{
+		case 1:	showMeals($menu->Montag1,$menu->Montag2);
+				break;
+		
+		case 2: showMeals($menu->Dienstag1,$menu->Dienstag2);
+				break;
+		
+		case 3: showMeals($menu->Mittwoch1,$menu->Mittwoch2);
+				break;
+		
+		case 4: showMeals($menu->Donnerstag1,$menu->Donnerstag2);
+				break;
+
+		case 5: showMeals($menu->Freitag1,$menu->Freitag2);
+				break;
+
+		default: echo "Mittagsmenü gibt es leider nur von Montag bis Freitag...";
+
+	}
+
+
 ?>

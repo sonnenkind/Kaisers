@@ -13,9 +13,7 @@
 
 	<body>
 		<div class="logo">
-			<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index'));?>">
-				<img src='/Images/logo.jpg' height='100%' border='0' frame='0'></img>
-			</a>
+			<img src='/Images/logo.jpg' height='100%' border='0px' frame='0'></img>
 		</div>
 		
 		<div class="header">
@@ -24,7 +22,7 @@
 			<div class="linkrow">
 				<table width='545px'>
 					<td width='100px' class="linkrowoff" onmouseover="className='linkrowon';" onmouseout="className='linkrowoff';">
- 						<a href="<?php echo $this->url(array('controller'=>'menu','action'=>'showmenu'));?>">
+ 						<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index'));?>">
  							Aktuelles
  						</a>
  					</td>
